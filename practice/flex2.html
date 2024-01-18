@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: lightgray;
+            height: 300px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .flex-image{
+            background-color: gray;
+            padding: 70px;
+            text-align: center;
+        }
+        .list-container{
+            background-color: pink;
+            flex: 1;
+            height: 500px;
+        }
+        p{
+            background-color: lightblue;
+            margin: 0;
+        }
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 500px;
+        }
+        .text-container .flex-image{
+            flex: 1;
+            height: 250px;
+        }
+        .text-container p{
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="flex-container">
+        <div class="flex-image">Image</div>
+        <h1>This is an H1</h1>
+    </header>
+
+    <main class="flex-container">
+        <div class="list-container">
+            <h2>This is a list:</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="text-container">
+            <div class="flex-image">Insert any image</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio hic omnis eos aspernatur numquam ad quisquam, provident error vitae? Sint ea recusandae, tempora officiis eos obcaecati pariatur laudantium modi adipisci.
+            Accusantium inventore sapiente saepe sint nam id impedit dolorum ducimus eius ipsam cumque est vero quae veniam debitis odit accusamus, eaque in? Nobis nostrum quas, rerum quibusdam repudiandae pariatur? Quis?</p>
+        </div>
+    </main>
+</body>
+</html>
