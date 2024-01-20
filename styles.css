@@ -1,4 +1,12 @@
 /*global*/
+:root{
+    --primary: rgb(211, 139, 31);
+    --secondary: rgb(9, 168, 9);
+    --tertiary: rgb(63, 57, 51);
+}
+html{
+    font-size: 62.5%;/* 10px = 1rem*/
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +15,8 @@ body{
     font-family: arial;
 }
 p{
-    line-height: 2;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 img{
     max-width: 100%;
@@ -15,6 +24,18 @@ img{
 a{
     text-decoration: none;
     color: white;
+    font-size: 1.6rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+h3{
+    margin: 1rem 0;
+    font-size: 1.8rem;
 }
 /*utilities*/
 .flex-header{
@@ -22,7 +43,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: 100px;
 }
@@ -45,10 +66,14 @@ a{
     height: 40vh;
 }
 .menu a{
-    margin: 0 20px;
+    margin: 0 2rem;
 }
 .site-init p{
-    font-size: 20px;
+    font-size: 2rem;
+}
+.site-second{
+    background-color: #222222;
+    color: white;
 }
 
 /*about us*/
@@ -64,22 +89,47 @@ a{
 .house-item{
     background-color: #dedede;
     width: 400px;
-    border: 1px rgb(63, 57, 51) solid;
-    margin-right: 10px;
+    border: 1px var(--tertiary) solid;
+    margin-right: 1rem;
 }
 .price{
-    color: rgb(9, 168, 9);
+    color: var(--secondary);
     font-weight: bold;
 }
 li img{
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 .btn{
     display: inline-block;
     color: white;
-    background-color: rgb(211, 139, 31);
+    background-color: var(--primary);
     border: 0;
     width: 100%;
     margin-bottom: 2rem;
-    padding: 10px;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+/*contact form*/
+fieldset{
+    padding: 1rem;
+}
+legend, label, input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input, .input-container textarea{
+    width: 70%;
+    background-color: #dedede;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
 }
