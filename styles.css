@@ -65,6 +65,7 @@ a{
     background-color: #dedede;
     width: 400px;
     border: 1px rgb(63, 57, 51) solid;
+    margin-right: 10px;
 }
 .price{
     color: rgb(9, 168, 9);
