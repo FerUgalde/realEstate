@@ -30,6 +30,7 @@ h1{
     font-size: 3rem;
 }
 h2{
+    text-align: center;
     margin: 1rem 0;
     font-size: 2.4rem;
 }
@@ -107,21 +108,26 @@ li img{
     width: 100%;
     margin-bottom: 2rem;
     padding: 1rem;
-    font-size: 1.6rem;
+    text-align: center;
 }
 
 /*contact form*/
 fieldset{
     padding: 1rem;
 }
-legend, label, input{
+legend{
+    font-weight: bold;
+    color: rgb(113, 122, 129);
+    font-size: 1.8rem;
+}
+input, select, textarea{
     font-size: 1.6rem;
 }
 .input-container{
     margin: 1rem;
 }
-.input-container input, .input-container textarea{
-    width: 70%;
+.input-container input, .input-container textarea, .input-container select, .radio{
+    width: 80%;
     background-color: #dedede;
     border: none;
     padding: .5rem;
@@ -132,4 +138,22 @@ legend, label, input{
     width: 10rem;
     text-align: right;
     margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.instructions{
+    text-align: center;
+    font-size: 2.1rem;
+}
+.input-container .radio{
+    width: 10%;
+}
+.btn-send{
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    border: none;
 }
