@@ -58,7 +58,15 @@ h3{
     width: 80%;
     margin: 0 auto;
 }
-
+@media(max-width:768px){
+    .flex-header{
+        flex-direction: column;
+    }
+    .flex-header-v{
+        height: 25vh;
+        text-align: center;
+    }
+}
 /*header*/
 .site-init{
     background-image: url(./img/header.jpg);
@@ -70,28 +78,97 @@ h3{
     margin: 0 2rem;
 }
 .site-init p{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 530;
+    width: 50vh;
 }
 .site-second{
     background-color: #222222;
     color: white;
 }
+@media(max-width:768px){
+    .site-init{
+        height: 32vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+        width: auto;
+    }
+    .site-second{
+        height: 22vh;
+    }
+    .flex-header{
+        padding-top: 2rem;
+    }
+    .menu a{
+        margin: 0 .9rem;
+    }
+}
 
 /*about us*/
-.flex-about{
+.flex-about, .flex-about-p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1rem;
 }
+.flex-about-p{
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.flex-about-p .blog-info p{
+    text-align: justify;
+}
+.about-img{
+    width: 150rem;
+    height: 40rem;
+}
+table{
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+table, th, td{
+    border-bottom: 1px solid var(--primary);
+    border-collapse: collapse;
+}
+thead{
+    height: 4rem;
+}
+th, td{
+    padding: 5px;
+    text-align: start;
+    border-radius: 1rem;
+}
+th{
+    background-color: var(--primary);
+    color: black;
+    font-weight: bold;
+}
+td{
+    padding: 1rem;
+    background-color: rgba(235, 197, 141, 0.349);
+}
 
+@media(max-width:768px){
+    .flex-about, .flex-about-p{
+        flex-direction: column;
+    }
+    .flex-about-p .blog-info{
+        margin-left: 0;
+    }
+    table{
+        width: 100%;
+    }
+}
 /*houses*/
 .house-item{
     background-color: #dedede;
-    width: 400px;
     border: 1px var(--tertiary) solid;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
 }
 .price{
     color: var(--secondary);
@@ -101,14 +178,18 @@ li img{
     margin-right: 1.5rem;
 }
 .btn{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     color: white;
     background-color: var(--primary);
     border: 0;
-    width: 100%;
     margin-bottom: 2rem;
     padding: 1rem;
-    text-align: center;
+}
+@media(max-width:768px){
+    .house-item{
+        margin: 0.5rem 0;
+    }
 }
 
 /*contact form*/
@@ -156,4 +237,101 @@ input, select, textarea{
     font-size: 1.6rem;
     margin: 2rem 0;
     border: none;
+}
+@media(max-width: 768px){
+    .input-container input, .input-container textarea, .input-container select, .radio{
+        width: 95%;
+    }
+    .input-container label{
+        text-align: left;
+        margin-right: -3rem;
+    }
+    .input-container .radio{
+        margin-right: 3rem;
+    }
+}
+
+/*blog*/
+.flex-blog{
+    display: flex;
+    gap: 2rem;
+    background-color: #dedede;
+    border: 1px var(--tertiary) solid;
+    margin: 2rem 0;
+    border-radius: 3rem;
+}
+.blog-img{
+    max-width: 45rem;
+    max-height: 40rem;
+}
+.blog-img img, .about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+}
+.blog-info, .about-info{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem 2rem .5rem;
+    gap: 2rem;
+
+}
+.blog-info hr{
+    background-color: var(--primary);
+    height: .1rem;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+}
+.blog-quantities{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+@media(max-width:768px){
+    .flex-blog{
+        flex-direction: column;
+    }
+    .blog-img, .about-img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .blog-info{
+        margin: 3rem;
+    }
+    
+}
+
+/*footer*/
+.footer-init{
+    display: flex;
+    background-image: url(./img/encuentra.jpg);
+    height: 35vh;
+    background-position: center;
+    background-size: 250%;
+    color: white;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.flex-footer h2{
+    text-align: left;
+}
+.flex-footer .btn{
+    margin-top: 2rem;
+}
+.flex-footer .menu{
+    margin-top: 1rem;
+}
+.site-second .flex-footer{
+    align-items: center;
+}
+@media(max-width:768px){
+    .footer-init p{
+        font-size: 1.2rem;
+    }
 }

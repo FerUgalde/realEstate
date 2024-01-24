@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td{
+            border-bottom: 1px solid white;
+            border-collapse: collapse;
+            font-family: arial;
+            margin-right: 30px;
+        }
+        th, td{
+            padding: 5px;
+            text-align: start;
+        }
+        th{
+            background-color: rgb(140, 140, 229);
+            color: black;
+            font-weight: bold;
+        }
+        td{
+            background-color: lightblue;
+            padding: .5rem;
+        }
+        .error{
+            background-color: rgb(241, 182, 182);
+            color: rgb(99, 0, 0);
+        }
+        thead{
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <th>Empld</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E342</td>
+                <td>Philip</td>
+                <td>Yoder</td>
+                <td>pjilipemail@email.com</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>E343</td>
+                <td>Amdrew</td>
+                <td>Reyna</td>
+                <td>andrewemail@email.com</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>E344</td>
+                <td>Fernanda</td>
+                <td>Ugalde</td>
+                <td>fernandaemail@email.com</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
